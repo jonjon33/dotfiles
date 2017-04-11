@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/jon/.config/i3'
-let g:netrw_dirhist_2='/home/jon/.config/i3status'
-let g:netrw_dirhist_3='/home/jon/.vim'
-let g:netrw_dirhist_4='/home/jon/Code'
-let g:netrw_dirhist_5='/home/jon/Pictures'
-let g:netrw_dirhist_6='/home/jon/.config'
-let g:netrw_dirhist_7='/home/jon'

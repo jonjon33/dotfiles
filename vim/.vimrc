@@ -1,24 +1,30 @@
-" vim-plug
+" vim-plug plugs
 call plug#begin()
 
+Plug 'tpope/vim-sensible'
+Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
+Plug 'nanotech/jellybeans.vim'
 Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-" make it pretty
+" make pretty
+set nu
 syntax enable
-let $NVIM_TUI_ENABLE_TRUE_COLOR = 0
-"let g:gruvbox_italic=1
-set background=light
+set background=dark
 colorscheme gruvbox
+
 highlight Comment cterm=italic
 
+set noshowmode
 set laststatus=2
-
 let g:lightline = {
-    \ 'colorscheme': 'gruvbox'
-    \ }
+	\ 'colorscheme': 'gruvbox',
+	\ }
+
+" be a filthy mouse user
+set mouse=a
 
 " spaces and tabs
 set tabstop=2
@@ -26,32 +32,11 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-" line wrap
-set wrap
-
-set linebreak
-
-set textwidth=0
-set nolist
-set wrapmargin=0
-
-set autoindent
-set breakindent
-
-" look and feel
-set title
-set nu
-
 " search
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 
-" key mapping
-cabbrev Wq  wq
-cabbrev W   w
-cabbrev Q   q
-
-" misc
-set backspace=indent,eol,start
+" bail easier
+cabbrev Q q
